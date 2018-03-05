@@ -1,4 +1,4 @@
-﻿namespace spotifyMute
+﻿namespace adMute
 {
   partial class Form1
   {
@@ -39,7 +39,7 @@
       // notifyIcon1
       // 
       this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
-      this.notifyIcon1.Text = "Spotify auto-mute";
+      this.notifyIcon1.Text = "adMute auto-mute";
       this.notifyIcon1.Visible = true;
       // 
       // contextMenuStrip1
@@ -65,7 +65,7 @@
       this.Name = "Form1";
       this.ShowInTaskbar = false;
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-      this.Text = "Spotify auto-mute";
+      this.Text = "adMute";
       this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
       this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
       this.contextMenuStrip1.ResumeLayout(false);

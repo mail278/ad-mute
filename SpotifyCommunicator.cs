@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace spotifyMute
+namespace adMute
 {
   public static class SpotifyCommunicator
   {

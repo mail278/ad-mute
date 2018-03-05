@@ -9,9 +9,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using adMute.Properties;
 using Microsoft.Win32;
 
-namespace spotifyMute
+namespace adMute
 {
   public partial class Form1 : Form
   {
@@ -46,15 +47,15 @@ namespace spotifyMute
       try
       {
         var title = SpotifyCommunicator.GetSongTitle();
-        if (/*title != "Spotify" && */!title.Contains(" - "))
+        if (!title.Contains(" - "))
         {
           if (!isMuted)
           {
             isMuted = true;
             AudioManager.Mute(true);
           }
-          notifyIcon1.Icon = spotifyMute.Properties.Resources.Custom_Icon_Design_Pretty_Office_8_Sound_off;
-          notifyIcon1.Text = "Spotify auto-mute (muted)";
+          notifyIcon1.Icon = Resources.Custom_Icon_Design_Pretty_Office_8_Sound_off;
+          notifyIcon1.Text = "adMute auto-mute (muted)";
 
         }
         else
@@ -64,8 +65,8 @@ namespace spotifyMute
             isMuted = false;
             AudioManager.Mute(false);
           }
-          notifyIcon1.Icon = spotifyMute.Properties.Resources.Custom_Icon_Design_Pretty_Office_8_Sound_on;
-          notifyIcon1.Text = "Spotify auto-mute (playing)";
+          notifyIcon1.Icon = Resources.Custom_Icon_Design_Pretty_Office_8_Sound_on;
+          notifyIcon1.Text = "adMute auto-mute (playing)";
         }
 
       }

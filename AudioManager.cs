@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CSCore.CoreAudioAPI;
 
-namespace spotifyMute
+namespace adMute
 {
   public static class AudioManager
   {
